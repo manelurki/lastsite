@@ -435,13 +435,14 @@
             var email = document.getElementsByName('email')[0].value;
             var phone = document.getElementsByName('phone')[0].value;
             var message = document.getElementsByName('message')[0].value;
+            console.log(email)
             // Define email parameters
 
             var templateParams = {
                 from_email: email,
-                to_email: "menelturki@gmail.com", // Email address of the recipient
+                to_email: "techniquedar1@gmail.com", // Email address of the recipient
                 from_name: username, // Your name
-                message: message // Message content
+                message: message + "\nEmail: " + email+"\nPhone Number: " + phone// Message content
             };
 
             // Send email using the template
